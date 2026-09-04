@@ -20,7 +20,7 @@
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">Scripter for hire</div>
-    <h1>I write Roblox systems that hold up after launch, not just in a demo clip.</h1>
+    <h1>Hi, I'm SnakeD. I write Roblox systems that hold up after launch, not just in a demo clip.</h1>
     <div class="hero-lede">
       <p>3+ years scripting on Roblox. I focus on code that's structured, performant, and easy for your team to build on top of after I'm done. Available for individual systems or full projects.</p>
       <dl class="hero-facts">
@@ -47,37 +47,45 @@
     <div class="work-item">
       <div>
         <h3>Realistic helicopter system</h3>
-        <p>Full flight model with movement on every axis — pitch, roll, yaw, collective and throttle all handled independently.</p>
+        <p>Full flight model with movement on every axis — pitch, roll, yaw, collective and throttle all handled independently, with functional rotors.</p>
         <div class="stack">Lua · Physics · VehicleSeat</div>
       </div>
-      <div class="work-media"><span>footage coming soon</span></div>
+      <div class="work-media">
+        <video src="media/Helicopter.mp4" loop muted playsinline preload="metadata"></video>
+      </div>
     </div>
 
     <div class="work-item">
       <div>
         <h3>Viewmodel combat system</h3>
-        <p>First-person viewmodel combat with a sword and a pistol — separate hit logic and animation handling for melee and ranged.</p>
+        <p>First-person viewmodel combat — katana hits register on a rig, then switches to the pistol for ranged damage.</p>
         <div class="stack">Lua · RemoteEvents · server validation</div>
       </div>
-      <div class="work-media"><span>footage coming soon</span></div>
+      <div class="work-media">
+        <video src="media/ViewmodelCombat.mp4" loop muted playsinline preload="metadata"></video>
+      </div>
     </div>
 
     <div class="work-item">
       <div>
         <h3>Bhop &amp; movement system</h3>
-        <p>Custom movement on top of Roblox's default character controller — bunny hop chaining, momentum and speed handling.</p>
+        <p>Custom movement on top of Roblox's default character controller — bunny hop chaining, slide and dash, with momentum and speed handling.</p>
         <div class="stack">Lua · Character control</div>
       </div>
-      <div class="work-media"><span>footage coming soon</span></div>
+      <div class="work-media">
+        <video src="media/Movement.mp4" loop muted playsinline preload="metadata"></video>
+      </div>
     </div>
 
     <div class="work-item">
       <div>
         <h3>Part-to-hologram script</h3>
-        <p>Turns any part into a hologram on the fly — scan-line material and shader-style effect, no manual setup per part.</p>
+        <p>Turns any part into a hologram on the fly — code shown first, then a regular part converted live with the scan-line effect.</p>
         <div class="stack">Lua · SurfaceGui / Materials</div>
       </div>
-      <div class="work-media"><span>footage coming soon</span></div>
+      <div class="work-media">
+        <video src="media/PartToHologram.mp4" loop muted playsinline preload="metadata"></video>
+      </div>
     </div>
   </div>
 </section>
@@ -127,37 +135,39 @@ Remove this comment block to bring it back.
     <div class="section-title">Services</div>
     <h2 class="section-heading">What I build</h2>
 
-    <div class="spec-row">
-      <div class="spec-name">Combat systems</div>
-      <div class="spec-desc">Server-authoritative hit detection, hitbox validation, latency compensation. Melee, ranged, and ability-based — built to stay responsive and cheat-resistant.</div>
-    </div>
-    <div class="spec-row">
-      <div class="spec-name">Enemy AI</div>
-      <div class="spec-desc">State machines with patrol, chase, attack, and retreat logic. Pathfinding that stays performant under load.</div>
-    </div>
-    <div class="spec-row">
-      <div class="spec-name">Data &amp; backend</div>
-      <div class="spec-desc">DataStore pipelines with session locking, retry logic, and structured schemas. Player data that doesn't get lost.</div>
-    </div>
-    <div class="spec-row">
-      <div class="spec-name">Progression systems</div>
-      <div class="spec-desc">XP, leveling, quests, and skill trees — designed so adding new content later doesn't require rewriting the base.</div>
-    </div>
-    <div class="spec-row">
-      <div class="spec-name">Pet &amp; gacha systems</div>
-      <div class="spec-desc">Rarity tables, inventory management, duplication protection, egg hatching.</div>
-    </div>
-    <div class="spec-row">
-      <div class="spec-name">Simulators &amp; tycoons</div>
-      <div class="spec-desc">Passive income loops, upgrade chains, prestige systems — structured to handle player growth without performance loss.</div>
-    </div>
-    <div class="spec-row">
-      <div class="spec-name">UI systems</div>
-      <div class="spec-desc">Shops, inventories, leaderboards, menus — clean, tweened, and responsive.</div>
-    </div>
-    <div class="spec-row">
-      <div class="spec-name">General systems</div>
-      <div class="spec-desc">Round-based logic, admin commands, badges, achievements, minigame frameworks, lobby systems, trading.</div>
+    <div class="spec-grid">
+      <div class="spec-row">
+        <div class="spec-name">Combat systems</div>
+        <div class="spec-desc">Server-authoritative hit detection, hitbox validation, latency compensation. Melee, ranged, and ability-based — built to stay responsive and cheat-resistant.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">Enemy AI</div>
+        <div class="spec-desc">State machines with patrol, chase, attack, and retreat logic. Pathfinding that stays performant under load.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">Data &amp; backend</div>
+        <div class="spec-desc">DataStore pipelines with session locking, retry logic, and structured schemas. Player data that doesn't get lost.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">Progression systems</div>
+        <div class="spec-desc">XP, leveling, quests, and skill trees — designed so adding new content later doesn't require rewriting the base.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">Pet &amp; gacha systems</div>
+        <div class="spec-desc">Rarity tables, inventory management, duplication protection, egg hatching.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">Simulators &amp; tycoons</div>
+        <div class="spec-desc">Passive income loops, upgrade chains, prestige systems — structured to handle player growth without performance loss.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">UI systems</div>
+        <div class="spec-desc">Shops, inventories, leaderboards, menus — clean, tweened, and responsive.</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">General systems</div>
+        <div class="spec-desc">Round-based logic, admin commands, badges, achievements, minigame frameworks, lobby systems, trading.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -187,13 +197,9 @@ Remove this comment block to bring it back.
   <div class="wrap">
     <h2>Have a system you need built? Let's talk.</h2>
     <div class="contact-links">
-      <a href="https://discord.com/users/SEU_ID_AQUI" target="_blank" rel="noopener" class="contact-link">
-        <span>Message me on Discord</span>
-        <span class="sub">@SnakeD</span>
-      </a>
-      <a href="https://discord.gg/SEU_CONVITE_AQUI" target="_blank" rel="noopener" class="contact-link">
+      <a href="https://discord.gg/T6BpK4E5GR" target="_blank" rel="noopener" class="contact-link">
         <span>Join the Discord server</span>
-        <span class="sub">Community &amp; support</span>
+        <span class="sub">Fastest way to reach me — @mykulak5887</span>
       </a>
     </div>
   </div>
@@ -203,5 +209,20 @@ Remove this comment block to bring it back.
   <div class="wrap">SnakeD — Roblox Scripter</div>
 </footer>
 
+<script>
+  const videos = document.querySelectorAll('.work-media video');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.6 });
+
+  videos.forEach((video) => observer.observe(video));
+</script>
 </body>
 </html>
