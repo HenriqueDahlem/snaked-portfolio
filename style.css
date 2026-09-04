@@ -117,7 +117,7 @@ a{ color:inherit; text-decoration:none; }
 }
 .btn-line:hover{ border-color:var(--orange); color:var(--orange); }
 
-/* ---------- SYSTEMS (spec-sheet list, not cards) ---------- */
+/* ---------- SYSTEMS ---------- */
 .systems{ padding:56px 0; border-bottom:2px solid var(--ink); }
 .section-title{
   font-size:13px;
@@ -240,6 +240,7 @@ a{ color:inherit; text-decoration:none; }
   align-items:center;
   justify-content:center;
   position:relative;
+  margin-top:auto;
 }
 .work-media:empty::before,
 .work-media:has(span)::before,
@@ -267,6 +268,15 @@ a{ color:inherit; text-decoration:none; }
   height:100%;
   object-fit:cover;
   display:block;
+}
+
+.work-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  column-gap:32px;
+}
+.work-grid .work-item{
+  border-top:1px solid var(--rule);
 }
 
 /* ---------- CONTACT ---------- */
@@ -299,6 +309,16 @@ a{ color:inherit; text-decoration:none; }
   font-weight:500;
   color:var(--ink-soft);
 }
+.contact-link-main{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.discord-icon{
+  width:22px;
+  height:22px;
+  flex-shrink:0;
+}
 .contact-link:hover{ color:var(--orange); padding-left:8px; }
 
 footer{
@@ -316,6 +336,7 @@ footer{
   .spec-row{ padding:20px 0 !important; border-right:none !important; }
   .spec-row:nth-last-child(-n+2){ border-bottom:1px solid var(--rule); }
   .spec-row:last-child{ border-bottom:none; }
+  .work-grid{ grid-template-columns:1fr; column-gap:0; }
 }
 
 :focus-visible{
