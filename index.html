@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SnakeD — Roblox Scripter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bar">
+  <div class="wrap">
+    <div class="mark">SnakeD</div>
+    <div class="bar-right">Roblox Scripter</div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Scripter for hire</div>
+    <h1>I write Roblox systems that hold up after launch, not just in a demo clip.</h1>
+    <div class="hero-lede">
+      <p>3+ years scripting on Roblox. I focus on code that's structured, performant, and easy for your team to build on top of after I'm done. Available for individual systems or full projects.</p>
+      <dl class="hero-facts">
+        <dt>Experience</dt>
+        <dd>3+ years</dd>
+        <dt>Language</dt>
+        <dd>Lua / Luau</dd>
+        <dt>Availability</dt>
+        <dd>Open for work</dd>
+      </dl>
+    </div>
+    <div class="cta-row">
+      <a href="#contact" class="btn btn-solid">Get in touch</a>
+      <a href="#work" class="btn btn-line">See recent work</a>
+    </div>
+  </div>
+</header>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="section-title">Recent work</div>
+    <h2 class="section-heading">Systems in action</h2>
+
+    <div class="work-item">
+      <div>
+        <h3>Realistic helicopter system</h3>
+        <p>Full flight model with movement on every axis — pitch, roll, yaw, collective and throttle all handled independently.</p>
+        <div class="stack">Lua · Physics · VehicleSeat</div>
+      </div>
+      <div class="work-media"><span>footage coming soon</span></div>
+    </div>
+
+    <div class="work-item">
+      <div>
+        <h3>Viewmodel combat system</h3>
+        <p>First-person viewmodel combat with a sword and a pistol — separate hit logic and animation handling for melee and ranged.</p>
+        <div class="stack">Lua · RemoteEvents · server validation</div>
+      </div>
+      <div class="work-media"><span>footage coming soon</span></div>
+    </div>
+
+    <div class="work-item">
+      <div>
+        <h3>Bhop &amp; movement system</h3>
+        <p>Custom movement on top of Roblox's default character controller — bunny hop chaining, momentum and speed handling.</p>
+        <div class="stack">Lua · Character control</div>
+      </div>
+      <div class="work-media"><span>footage coming soon</span></div>
+    </div>
+
+    <div class="work-item">
+      <div>
+        <h3>Part-to-hologram script</h3>
+        <p>Turns any part into a hologram on the fly — scan-line material and shader-style effect, no manual setup per part.</p>
+        <div class="stack">Lua · SurfaceGui / Materials</div>
+      </div>
+      <div class="work-media"><span>footage coming soon</span></div>
+    </div>
+  </div>
+</section>
+
+<!--
+TYCOON SECTION — disabled for now, waiting on GitHub repo + video paths.
+Remove this comment block to bring it back.
+
+<section class="work" id="tycoon">
+  <div class="wrap">
+    <div class="section-title">Unreleased project</div>
+    <h2 class="section-heading">Tycoon systems — full game, launching soon</h2>
+    <p class="section-note">These systems are part of a complete tycoon game I built that hasn't launched yet. Footage and the game link go up here once it's live.</p>
+
+    <div class="work-item">
+      <div>
+        <h3>Pet unboxing system</h3>
+        <p>Egg opening with weighted rarity tables, animations and duplication handling.</p>
+        <div class="stack">Lua · Rarity tables</div>
+      </div>
+      <div class="work-media"><span>coming with launch</span></div>
+    </div>
+
+    <div class="work-item">
+      <div>
+        <h3>Index system</h3>
+        <p>Collection tracking across every pet in the game, with progress and completion state per player.</p>
+        <div class="stack">Lua · DataStore</div>
+      </div>
+      <div class="work-media"><span>coming with launch</span></div>
+    </div>
+
+    <div class="work-item">
+      <div>
+        <h3>Purchase &amp; upgrade system</h3>
+        <p>Tycoon-style purchases and upgrade chains tied to in-game currency and progression.</p>
+        <div class="stack">Lua · MarketplaceService</div>
+      </div>
+      <div class="work-media"><span>coming with launch</span></div>
+    </div>
+  </div>
+</section>
+-->
+
+<section class="systems">
+  <div class="wrap">
+    <div class="section-title">Services</div>
+    <h2 class="section-heading">What I build</h2>
+
+    <div class="spec-row">
+      <div class="spec-name">Combat systems</div>
+      <div class="spec-desc">Server-authoritative hit detection, hitbox validation, latency compensation. Melee, ranged, and ability-based — built to stay responsive and cheat-resistant.</div>
+    </div>
+    <div class="spec-row">
+      <div class="spec-name">Enemy AI</div>
+      <div class="spec-desc">State machines with patrol, chase, attack, and retreat logic. Pathfinding that stays performant under load.</div>
+    </div>
+    <div class="spec-row">
+      <div class="spec-name">Data &amp; backend</div>
+      <div class="spec-desc">DataStore pipelines with session locking, retry logic, and structured schemas. Player data that doesn't get lost.</div>
+    </div>
+    <div class="spec-row">
+      <div class="spec-name">Progression systems</div>
+      <div class="spec-desc">XP, leveling, quests, and skill trees — designed so adding new content later doesn't require rewriting the base.</div>
+    </div>
+    <div class="spec-row">
+      <div class="spec-name">Pet &amp; gacha systems</div>
+      <div class="spec-desc">Rarity tables, inventory management, duplication protection, egg hatching.</div>
+    </div>
+    <div class="spec-row">
+      <div class="spec-name">Simulators &amp; tycoons</div>
+      <div class="spec-desc">Passive income loops, upgrade chains, prestige systems — structured to handle player growth without performance loss.</div>
+    </div>
+    <div class="spec-row">
+      <div class="spec-name">UI systems</div>
+      <div class="spec-desc">Shops, inventories, leaderboards, menus — clean, tweened, and responsive.</div>
+    </div>
+    <div class="spec-row">
+      <div class="spec-name">General systems</div>
+      <div class="spec-desc">Round-based logic, admin commands, badges, achievements, minigame frameworks, lobby systems, trading.</div>
+    </div>
+  </div>
+</section>
+
+<section class="expect">
+  <div class="wrap">
+    <div class="section-title">Process</div>
+    <h2 class="section-heading">What to expect</h2>
+    <div class="expect-list">
+      <div class="expect-item">
+        <div class="expect-mark">—</div>
+        <div><h3>Modular, commented code</h3> <span class="body">your team can expand after I'm done.</span></div>
+      </div>
+      <div class="expect-item">
+        <div class="expect-mark">—</div>
+        <div><h3>Clear communication throughout</h3> <span class="body">you'll always know the status of your project.</span></div>
+      </div>
+      <div class="expect-item">
+        <div class="expect-mark">—</div>
+        <div><h3>Bugs on my end get fixed</h3> <span class="body">no discussion.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Have a system you need built? Let's talk.</h2>
+    <div class="contact-links">
+      <a href="https://discord.com/users/SEU_ID_AQUI" target="_blank" rel="noopener" class="contact-link">
+        <span>Message me on Discord</span>
+        <span class="sub">@SnakeD</span>
+      </a>
+      <a href="https://discord.gg/SEU_CONVITE_AQUI" target="_blank" rel="noopener" class="contact-link">
+        <span>Join the Discord server</span>
+        <span class="sub">Community &amp; support</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">SnakeD — Roblox Scripter</div>
+</footer>
+
+</body>
+</html>

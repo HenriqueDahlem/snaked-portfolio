@@ -1,0 +1,296 @@
+:root{
+  --paper: #161512;
+  --paper-2: #1E1C17;
+  --ink: #EDEAE2;
+  --ink-soft: #A8A498;
+  --rule: #3A382F;
+  --orange: #E8501C;
+  --olive: #A9AD74;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Archivo', sans-serif;
+  line-height:1.5;
+}
+
+::selection{ background:var(--orange); color:var(--paper); }
+
+a{ color:inherit; text-decoration:none; }
+
+.wrap{
+  max-width:920px;
+  margin:0 auto;
+  padding:0 28px;
+}
+
+/* ---------- HEADER BAR ---------- */
+.bar{
+  border-bottom:2px solid var(--ink);
+  padding:20px 0;
+}
+.bar .wrap{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+}
+.mark{
+  font-weight:800;
+  font-size:19px;
+  letter-spacing:-0.01em;
+}
+.bar-right{
+  font-size:14px;
+  color:var(--ink-soft);
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  padding:64px 0 56px;
+  border-bottom:2px solid var(--ink);
+}
+.hero .eyebrow{
+  font-size:15px;
+  color:var(--olive);
+  font-weight:600;
+  margin-bottom:18px;
+}
+.hero h1{
+  font-size:clamp(36px, 6vw, 58px);
+  font-weight:800;
+  line-height:1.03;
+  letter-spacing:-0.02em;
+  max-width:780px;
+  margin-bottom:28px;
+}
+.hero-lede{
+  display:grid;
+  grid-template-columns:1fr 260px;
+  gap:40px;
+  align-items:start;
+}
+.hero-lede p{
+  font-size:18px;
+  color:var(--ink-soft);
+  max-width:52ch;
+}
+.hero-facts{
+  border-left:2px solid var(--ink);
+  padding-left:20px;
+}
+.hero-facts dt{
+  font-size:13px;
+  color:var(--ink-soft);
+  margin-bottom:2px;
+}
+.hero-facts dd{
+  font-size:15px;
+  font-weight:600;
+  margin-bottom:16px;
+}
+.hero-facts dd:last-child{ margin-bottom:0; }
+
+.cta-row{
+  display:flex;
+  gap:14px;
+  margin-top:36px;
+  flex-wrap:wrap;
+}
+.btn{
+  display:inline-block;
+  padding:13px 24px;
+  font-size:15px;
+  font-weight:700;
+  border:2px solid var(--ink);
+}
+.btn-solid{
+  background:var(--ink);
+  color:var(--paper);
+}
+.btn-solid:hover{ background:var(--orange); border-color:var(--orange); }
+.btn-line{
+  background:transparent;
+  color:var(--ink);
+}
+.btn-line:hover{ border-color:var(--orange); color:var(--orange); }
+
+/* ---------- SYSTEMS (spec-sheet list, not cards) ---------- */
+.systems{ padding:56px 0; border-bottom:2px solid var(--ink); }
+.section-title{
+  font-size:13px;
+  font-weight:700;
+  color:var(--ink-soft);
+  margin-bottom:6px;
+}
+.section-heading{
+  font-size:28px;
+  font-weight:800;
+  letter-spacing:-0.01em;
+  margin-bottom:36px;
+  max-width:600px;
+}
+
+.section-note{
+  font-size:15.5px;
+  color:var(--ink-soft);
+  max-width:60ch;
+  margin-top:-22px;
+  margin-bottom:32px;
+}
+
+.spec-row{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:24px;
+  padding:22px 0;
+  border-top:1px solid var(--rule);
+}
+.spec-row:last-child{ border-bottom:1px solid var(--rule); }
+.spec-name{
+  font-size:19px;
+  font-weight:700;
+}
+.spec-desc{
+  font-size:15.5px;
+  color:var(--ink-soft);
+  max-width:60ch;
+}
+
+/* ---------- WHAT TO EXPECT ---------- */
+.expect{ padding:56px 0; border-bottom:2px solid var(--ink); }
+.expect-list{
+  display:flex;
+  flex-direction:column;
+}
+.expect-item{
+  display:grid;
+  grid-template-columns:34px 1fr;
+  gap:18px;
+  padding:20px 0;
+  border-top:1px solid var(--rule);
+  align-items:baseline;
+}
+.expect-item:last-child{ border-bottom:1px solid var(--rule); }
+.expect-mark{
+  font-size:20px;
+  font-weight:800;
+  color:var(--orange);
+}
+.expect-item h3{
+  font-size:17px;
+  font-weight:700;
+  display:inline;
+}
+.expect-item span.body{
+  font-size:15.5px;
+  color:var(--ink-soft);
+}
+
+/* ---------- WORK / PROJECTS ---------- */
+.work{ padding:56px 0; border-bottom:2px solid var(--ink); }
+.work-item{
+  padding:30px 0;
+  border-top:1px solid var(--rule);
+  display:grid;
+  grid-template-columns:1fr 300px;
+  gap:32px;
+}
+.work-item:last-child{ border-bottom:1px solid var(--rule); }
+.work-item h3{
+  font-size:21px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+.work-item p{
+  font-size:15px;
+  color:var(--ink-soft);
+  max-width:48ch;
+  margin-bottom:14px;
+}
+.stack{
+  font-size:13.5px;
+  color:var(--olive);
+  font-weight:600;
+}
+.work-media{
+  aspect-ratio:16/10;
+  background:var(--paper-2);
+  border:1.5px solid var(--ink);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+.work-media::before,
+.work-media::after{
+  content:'';
+  position:absolute;
+  background:var(--rule);
+}
+.work-media::before{ width:100%; height:1px; top:50%; left:0; }
+.work-media::after{ height:100%; width:1px; left:50%; top:0; }
+.work-media span{
+  position:relative;
+  z-index:1;
+  background:var(--paper-2);
+  padding:6px 10px;
+  font-size:12.5px;
+  color:var(--ink-soft);
+  font-weight:600;
+}
+
+/* ---------- CONTACT ---------- */
+.contact{ padding:64px 0 72px; }
+.contact h2{
+  font-size:clamp(30px, 5vw, 44px);
+  font-weight:800;
+  letter-spacing:-0.02em;
+  max-width:520px;
+  margin-bottom:36px;
+}
+.contact-links{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+.contact-link{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:22px 0;
+  border-top:2px solid var(--ink);
+  font-size:20px;
+  font-weight:700;
+  transition:color .1s ease, padding-left .15s ease;
+}
+.contact-link:last-of-type{ border-bottom:2px solid var(--ink); }
+.contact-link .sub{
+  font-size:13.5px;
+  font-weight:500;
+  color:var(--ink-soft);
+}
+.contact-link:hover{ color:var(--orange); padding-left:8px; }
+
+footer{
+  padding:24px 0;
+  font-size:13px;
+  color:var(--ink-soft);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:760px){
+  .hero-lede{ grid-template-columns:1fr; gap:24px; }
+  .hero-facts{ border-left:none; border-top:2px solid var(--ink); padding-left:0; padding-top:16px; display:flex; gap:32px; flex-wrap:wrap; }
+  .hero-facts dd{ margin-bottom:0; }
+  .spec-row{ grid-template-columns:1fr; gap:6px; }
+  .work-item{ grid-template-columns:1fr; }
+  .work-media{ order:-1; }
+}
+
+:focus-visible{
+  outline:2px solid var(--orange);
+  outline-offset:2px;
+}
